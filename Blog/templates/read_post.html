@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>{{ post.title }}</title>
+</head>
+<body>
+  <h1>{{ post.title }}</h1>
+  <p>{{ post.content }}</p>
+
+  <hr>
+  <p><a href="/edit/{{ post.id }}">Edit post</a></p>
+  <p><a href="/delete/{{ post.id }}">Delete post</a></p>
+
+  <hr>
+  <p><a href="/">Back to Blog</a></p>
+</body>
+</html>
