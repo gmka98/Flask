@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Home</title>
+  </head>
+  <body>
+    <h1>Home</h1>
+    {% if 'username' in session %}
+  <p>Welcome, {{ session['username'] }}!</p>
+  <p><a href="/logout">Logout</a></p>
+  <p>Session contents: {{ session }}</p>
+{% else %}
+  <p>You are not logged in. <a href="/login">Login</a></p>
+{% endif %}
+
+  </body>
+</html>
