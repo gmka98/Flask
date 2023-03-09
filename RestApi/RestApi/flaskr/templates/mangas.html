@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>All Mangas</title>
+  </head>
+  <body>
+    <h1>All Mangas</h1>
+    <ul>
+      {% for manga in mangas %}
+      <li>{{ manga.title }} - {{ manga.author }} ({{ manga.year }})</li>
+      {% endfor %}
+    </ul>
+  </body>
+</html>
